@@ -1,7 +1,16 @@
 #!/usr/bin/python3
-"""__init__ magic method for models directory"""
-from models.engine.file_storage import FileStorage
+"""
+Module for the Amenity class.
+"""
+from models.base_model import BaseModel
 
 
-storage = FileStorage()
-storage.reload()
+class Amenity(BaseModel):
+    """
+    Represent an amenity.
+
+    Attributes:
+        name (str): The name of the amenity.
+    """
+
+    name = ""
